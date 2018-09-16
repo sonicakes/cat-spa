@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Mukta');
+.grid{
+    display:grid;
+    grid-template-rows: 5% 30% 10% 30% 20% 5%;
+    grid-template-columns: repeat(6, 1fr);
+    /* min-height: 1000px; */
+    grid-column-gap: 20px;
+}
+img {
+    max-width: 100%;
+  }
+.header {
+grid-column: 1 / span 6;
+text-align: center;
+background-color: #ffffff;
+color: orchid;
+padding: 10px;
+font-family: 'Dancing Script', cursive;
+font-size: 2.5rem;
+}
+.banner{
+    grid-column: 1/ span 6;
+    text-align: center;
+    background-color: orchid;
+    color: #ffffff;
+    font-family: 'Mukta', sans-serif;
+    font-size: 5rem;
+    font-weight: 300;
+    letter-spacing: 3.7px;
+    color: #ffffff;
+}
+.about{
+    grid-column: 1/ span 6;
+    text-align: center;
+}
+.text {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    color: #2f2d2d;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 0.5px;
+    padding-top: 30px;
+  }
+.address {
+    grid-column: 1 / span 2;
+    background-color: brown;
+    }
+    
+    .hours {
+    grid-column: 3 / span 2;
+    background-color: yellow;
+    }
+    
+    .call {
+    grid-column: 5 / span 2;
+    background-color: royalblue;
+    }
+    .test-1{
+        grid-column: 1 / span 3;
+        background-color: olivedrab;
+    }
+    .test-2{
+        grid-column: 4 / span 3;
+        background-color: pink;
+    }
+    .footer {
+        grid-column: 1 / span 6;
+        text-align: center;
+        background-color: orange;
+        }
+@media(max-width: 600px){
+    .grid{
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 30% 10% repeat(3, 10%) 20% 5%;
+        grid-row-gap: 20px;
+    }
+    .text {
+        width: 60%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+    .header{
+        margin-bottom: -20px;
+    }
+    .banner {
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 2.75;
+        letter-spacing: 1.9px;
+        margin-bottom: -20px;
+      }
+    
+      .img-banner {
+        width: 195px;
+        height: 237px;
+        padding-left: 50px;
+      }
+    .about{
+        margin-bottom: -20px;
+    }
+    .footer{
+        margin-top: -20px;
+    }
+    .address{
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 1;
+    }
+    .hours{
+        grid-row: 5 / span 1;
+        grid-column: 1 / span 1;
+    }
+    .call{
+        grid-row: 6 / span 1;
+        grid-column: 1 / span 1;
+    }
+    .test-1{
+        grid-row: 7 / span 1;
+        grid-column: 1 / span 1;
+    }
+    .test-2{
+        grid-row: 8 / span 1;
+        grid-column: 1 / span 1;
+    }
+}
+    
